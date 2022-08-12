@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Game</title>
+</head>
+<body>
+    
+    <div class="gameContainer">
+        <div class="playerContainer">
+            <h2>PLAYER</h2>
+            <div class="optionsContainer">
+                <img src="img/paper.png" alt="papel" id="papel">
+                <img src="img/rock.png" alt="piedra" id="piedra">
+                <img src="img/scissor.png" alt="tijera" id="tijera">
+            </div>
+        </div>    
+        <div class="machineContainer">
+            <h2>MACHINE</h2>
+            <div class="optionsContainer">
+                <img src="img/paper.png" alt="papel" id="papel">
+                <img src="img/rock.png" alt="piedra" id="piedra">
+                <img src="img/scissor.png" alt="tijera" id="tijera">
+            </div>
+        </div>
+        <div class="containerButton">
+            <button id="startGame">PLAY</button>
+            <p>You have to select an option</p>
+        </div>
+    </div>
+
+    <div class="cartelInMid">
+        <div class="winCartel">
+            <h3></h3>
+        </div>
+        <button id="restartGame">RESTART</button>
+    </div>
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>

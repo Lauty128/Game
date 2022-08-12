@@ -1,0 +1,59 @@
+body { margin: 0; padding: 0; background-color: #4A4A4A;}
+
+.gameContainer{
+    --color: #ababab;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    width: 70%;
+    gap: 20px;
+    margin: auto;
+    padding: 10px;
+    margin-top: 20px;
+    background-color:var(--color) ;
+}
+
+.playerContainer, .machineContainer{
+    padding: 10px;
+    user-select: none;
+}.playerContainer h2, .machineContainer h2{ text-align: center; }
+
+.optionsContainer{ display: flex; flex-direction: column; gap: 5px }
+.optionsContainer img:hover{ filter: brightness(1) }
+.optionsContainer img{ width: 120px; border-radius: 50%; cursor: pointer; filter: brightness(0.8); transition: linear 0.2s; }
+.machineContainer .optionsContainer img{ cursor:auto; filter: brightness(0.8); }
+
+.optionsContainer .selectOption, .machineContainer .optionsContainer .selectOption{ filter: brightness(1); background-color: rgba(255,255,255,0.5); }
+
+.containerButton{
+    grid-column: span 2;
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    height: 50px;
+}.containerButton p{ opacity: 0; margin: 2px; transition: all 0.3s; }
+.containerButton .showText{ opacity: 1 }
+
+#startGame{ 
+    font-size: 20px;
+    padding: 10px 15px;
+    outline: none;
+    border: none;
+    filter: brightness(0.6);
+    transition: linear 0.2s;
+    width: 150px;
+    margin: auto;
+ }
+ .buttonReady{ background-color: rgb(26, 88, 26); box-shadow: 0 0 5px rgba(0,0,0,0.8); }
+ .buttonReady:hover{ background-color: rgb(50, 121, 50); cursor: pointer }
+
+ .cartelInMid{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 150px;
+    transform: translate(-50%,-50%);
+ } 
+ .winCartel{  border-bottom: 5px solid #fff; }
+ .winCartel h3{ margin: 2px; font-size: 30px; text-align: center; color: #fff; }
+ #restartGame{ width: 100%;margin-top: 10px; padding: 5px 0; }

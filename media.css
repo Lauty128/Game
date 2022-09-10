@@ -1,0 +1,12 @@
+@media(max-width:800px){
+    .gameContainer{ width: 90%; }
+    .playerContainer{ justify-self: baseline; }
+    .machineContainer{ justify-self:end; }
+}
+
+@media(max-width:500px){
+    .gameContainer{ width: 90% }
+    .playerContainer, .machineContainer{ justify-self: center }
+    .cartelInMid{ position: relative; margin-top: 100px }
+    #restartGame{ font-size: 28px; padding: 5px; }
+}
